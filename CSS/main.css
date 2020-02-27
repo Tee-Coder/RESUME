@@ -34,6 +34,17 @@ div{
     text-transform: uppercase;
 }
 
+#animate-Resume{
+
+font-weight: bolder;
+color: blueviolet;
+position: absolute;
+left: 0pt;
+right: 0pt;
+
+
+}
+
 .edit-div-1
 {
    background-color: #5f9ea0;
