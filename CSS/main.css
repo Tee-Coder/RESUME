@@ -1,7 +1,9 @@
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    padding-left: 0pt;/*helps to arrange the box from the left that is how far away from the left*/
+    padding-right: 150pt;/*helps to arrange the box from the right that is how far away from the right*/
+    margin:0pt
+   
 }
 .designbody 
 {
@@ -15,12 +17,15 @@ left: 150pt;
 align-self: center;
 background: rgb(63,94,251);
 background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+text-align: left;
 }
 
 
+
 div{
+    
     height: 400px;
-    width: 70%;
+    width: 100%;
     display: block;
     text-align: center;
     flex-direction: column;
@@ -34,20 +39,53 @@ div{
     text-transform: uppercase;
 }
 
-#animate-Resume{
+#edit-header{
 
 font-weight: bolder;
-color: blueviolet;
-position: absolute;
-left: 0pt;
-right: 0pt;
+color:#1e4d2b;
+align-self: auto;
+height: 100pt;
+widows: 50px;
+position: fixed;
+padding-left: 700pt;
+font-size: 15pt;
+animation-name:header-animation;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+animation-fill-mode: forwards;
+animation-direction:linear;margin-top: 49px;
 
+}
+
+@keyframes header-animation
+{
+    0%
+    {
+        transform: scale(1);
+    }
+
+     50%
+    {
+        transform: scale(1.2);
+    }
+
+     75%
+    {
+        transform: scale(0.9 );
+    }
+
+     100%
+    {
+        transform: scale(1);
+    }
 
 }
 
 .edit-div-1
 {
    background-color: #5f9ea0;
+   align-self: center;
+  
 
 }
 
@@ -89,5 +127,5 @@ right: 0pt;
 {
     
   
-    width: 35%;
+    width: 50%;
 }
