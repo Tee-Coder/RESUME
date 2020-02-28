@@ -1,10 +1,17 @@
+
+
 *{
     box-sizing: border-box;
     padding-left: 0pt;/*helps to arrange the box from the left that is how far away from the left*/
     padding-right: 150pt;/*helps to arrange the box from the right that is how far away from the right*/
     margin:0pt
+
+  
    
 }
+
+@import URL("https://fonts.googleapis.com/css?family=Cinzel&display=swap");
+
 .designbody 
 {
 display: flex;
@@ -17,7 +24,7 @@ left: 150pt;
 align-self: center;
 background: rgb(63,94,251);
 background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-text-align: left;
+text-align: inherit;
 }
 
 
@@ -27,33 +34,36 @@ div{
     height: 400px;
     width: 100%;
     display: block;
-    text-align: center;
+  
     flex-direction: column;
     flex-wrap: wrap;
     padding: 10pt;
 }
 .font-face
 {
-    font-style: italic;
-    font-family: Arial, Helvetica, sans-serif1;
+    font-style: normal;
+    font-family: 'Cinzel', serif;
     text-transform: uppercase;
+    text-align: center;
 }
 
 #edit-header{
 
 font-weight: bolder;
-color:#1e4d2b;
-align-self: auto;
+color:wheat;
+
 height: 100pt;
-widows: 50px;
+text-align: inherit;
 position: fixed;
-padding-left: 700pt;
-font-size: 15pt;
+padding-left: 900pt;
+font-size: 20pt;
+
 animation-name:header-animation;
 animation-duration: 10s;
 animation-iteration-count: infinite;
-animation-fill-mode: forwards;
-animation-direction:linear;margin-top: 49px;
+
+animation-direction: alternate-reverse;
+margin-top: 49px;
 
 }
 
@@ -61,71 +71,98 @@ animation-direction:linear;margin-top: 49px;
 {
     0%
     {
-        transform: scale(1);
+       transform: translate(-20px 200px);
+    }
+    25%
+    {
+       transform: translate(-20px 200px);
     }
 
      50%
     {
-        transform: scale(1.2);
+        transform: translate(-20px 200px);
+        
     }
 
      75%
     {
-        transform: scale(0.9 );
+        transform: translate(-20px,200px);
     }
 
      100%
     {
-        transform: scale(1);
+      transform: translate(-20px 200px);
     }
 
 }
 
-.edit-div-1
-{
-   background-color: #5f9ea0;
-   align-self: center;
-  
 
+#edit-link
+{
+    position: absolute;
+    right: 600pt;
+    padding-top: 50pt;
+   
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    text-decoration: maroon;
+    display: block;
+  
+    border: mediumblue;
+   
+    
 }
 
-.edit-div-2
+
+ #edit-div-1
+{
+   background-color: #5f9ea0;
+   align-self:center;
+   height: 250px;
+   
+}
+
+
+#edit-div-2
 {
     background-color: #00ffff;
     
 }
 
-.edit-div-3
+#edit-div-3
 {
     background-color: #21abcd;
     
 }
 
-.edit-div-4
+#edit-div-4
 {
     background-color:#00bfff ;
 
 }
 
-.edit-div-5
+#edit-div-5
 {
     background-color: #ace5ee;
 }
-.edit-div-6
+#edit-div-6
 {
     background-color:#9bddff;
 }
 
-.edit-div-7
+#edit-div-7
 {
    background-color: #5f9ea0;
 
 }
-.edit-div-3,
-.edit-div-4
+#edit-div-3
+{
+    width:30%;
+}
+#edit-div-4
 
 {
     
   
-    width: 50%;
+    width: 70%;
 }
