@@ -51,7 +51,6 @@ div{
 
 font-weight: bolder;
 color:wheat;
-
 height: 100pt;
 text-align: inherit;
 position: fixed;
@@ -97,21 +96,48 @@ margin-top: 49px;
 }
 
 
-#edit-link
+.edit-link
 {
     position: absolute;
-    right: 600pt;
-    padding-top: 50pt;
-   
+    right: 700pt;
+   padding-top: 300px;
+   text-decoration-color: black;
     font-family: 'Times New Roman', Times, serif;
     font-size: 14pt;
     text-decoration: maroon;
-    display: block;
-  
-    border: mediumblue;
-   
-    
+    display:inline-block;
+    border: mediumblue 2px;
+    position: fixed;
+
 }
+a{
+    color: wheat;
+    border: white solid 3px;
+    text-indent: 5px;
+    display: inline-block;
+    padding: 10px;
+    bottom: 20px;
+
+      
+} 
+
+a:hover
+{
+text-transform: capitalize;
+background-color: teal;
+color: white;
+}
+
+
+#Portrait
+{
+    position: absolute;
+    height: 250px;
+    right: 840pt;
+    width: 400px;
+}
+
+
 
 
  #edit-div-1
