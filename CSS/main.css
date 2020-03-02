@@ -119,7 +119,7 @@ margin-top: 49px;
     text-indent: 5px;
     display: inline-block;
     padding: 10px;
-   
+   cursor: pointer;
     right:400pt;
 
       
@@ -210,3 +210,28 @@ a:focus{
     color: darkblue;
     
 }
+
+.item1 { grid-area: Skills; }
+.item2 { grid-area: Interest; }
+.item3 { grid-area: Hobbies; }
+.item4 { grid-area: Volunteer; }
+.item5 { grid-area: References; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'skills Skills Skills Skills Skills Skills'
+    'Interest Interest Interest Interest Hobbies Hobbies'
+    'Volunteer References References References References References';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 15px;
+}
+
