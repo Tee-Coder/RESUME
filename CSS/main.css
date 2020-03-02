@@ -9,8 +9,11 @@
   
    
 }
+@import URL('https://fonts.googleapis.com/css?family=Lacquer&display=swap');
 
-@import URL("https://fonts.googleapis.com/css?family=Cinzel&display=swap");
+@import URL('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+
+@import URL('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
 
 .designbody 
 {
@@ -25,6 +28,7 @@ align-self: center;
 background: rgb(63,94,251);
 background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 text-align: inherit;
+font-family: 'Satisfy', serif;
 }
 
 
@@ -34,7 +38,7 @@ div{
     height: 400px;
     width: 100%;
     display: block;
-  
+  font-family: 'Satisfy', serif;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 10pt;
@@ -42,7 +46,7 @@ div{
 .font-face
 {
     font-style: normal;
-    font-family: 'Cinzel', serif;
+    font-family: 'Satisfy';
     text-transform: uppercase;
     text-align: center;
 }
@@ -56,11 +60,10 @@ text-align: inherit;
 position: fixed;
 padding-left: 900pt;
 font-size: 20pt;
-
+font-family: 'Lacquer', serif;
 animation-name:header-animation;
 animation-duration: 10s;
 animation-iteration-count: infinite;
-
 animation-direction: alternate-reverse;
 margin-top: 49px;
 
@@ -110,28 +113,38 @@ margin-top: 49px;
     position: fixed;
 
 }
-a{
+#edit-list{
     color: wheat;
     border: white solid 3px;
     text-indent: 5px;
     display: inline-block;
     padding: 10px;
-    bottom: 20px;
+   
+    right:400pt;
 
       
 } 
 
 a:hover
+
 {
 text-transform: capitalize;
 background-color: teal;
 color: white;
+font-size: 20pt;
 }
+
+a:focus{
+    background-color: black;
+    color: burlywood;
+}
+
+
 
 
 #Portrait
 {
-    position: absolute;
+    position: fixed;
     height: 250px;
     right: 840pt;
     width: 400px;
@@ -191,4 +204,9 @@ color: white;
     
   
     width: 70%;
+}
+
+#edit-link2 a{
+    color: darkblue;
+    
 }
